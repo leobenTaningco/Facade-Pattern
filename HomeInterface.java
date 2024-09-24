@@ -1,38 +1,13 @@
 public class HomeInterface{
-    private Lights lights;
-    private Tv tv;
-    private AirConditioning airConditioning;
+    private HomeService lights;
+    private HomeService tv;
+    private HomeService airConditioning;
 
-    public HomeInterface(Lights lights, Tv tv, AirConditioning airConditioning){
+    public HomeInterface(HomeService lights, HomeService tv, HomeService airConditioning2){
         this.lights = lights;
         this.tv = tv;
-        this.airConditioning = airConditioning;
+        this.airConditioning = airConditioning2;
 
-    }
-
-    public void turnOnLights(){
-        lights.turnOn();
-    }
-
-    public void turnOffLights(){
-        lights.turnOff();
-    }
-
-    
-    public void turnOnTv(){
-        tv.turnOn();
-    }
-
-    public void turnOffTv(){
-        tv.turnOff();
-    }
-
-    public void turnOnAirConditioning(){
-        airConditioning.turnOn();
-    }
-
-    public void turnOffAirConditioning(){
-        airConditioning.turnOff();
     }
 
     public void turnOnAll(){
